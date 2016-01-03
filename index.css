@@ -1,0 +1,281 @@
+@font-face{
+	font-family: caviar;
+	src: url(public/stylesheets/Caviar_Dreams_Bold.ttf);
+}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('public/fonts/icomoon.eot?tt7cvh');
+    src:    url('public/fonts/icomoon.eot?tt7cvh#iefix') format('embedded-opentype'),
+        url('public/fonts/icomoon.ttf?tt7cvh') format('truetype'),
+        url('public/fonts/icomoon.woff?tt7cvh') format('woff'),
+        url('public/fonts/icomoon.svg?tt7cvh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\e900";
+    width: 30px;
+	height: 30px;
+	color: #000;
+}
+.icon-search:hover{
+	background-color: #D8D8D8;
+}
+.icon{
+	font-size: 20px;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	background-color: #D8D8D8;
+	position: relative;
+	right: 10px;
+	top: 10px;
+	border-radius: 10%;
+}
+.icon:hover{
+	-webkit-transform: scale(1.5,1.5);
+}
+
+body{
+	background-color: #4B688B;
+	font-family: caviar;
+}
+nav{
+	background-color: #143153;
+}
+section{
+	background-color: #143153;
+	margin-bottom: 50px;
+}
+li{
+	list-style:none;
+	height: 50px;
+	color: #748BA7;
+	text-align: center;
+	margin-left: -40px;
+	line-height: 50px;	
+}
+li:hover{
+	background-color: #D8D8D8;
+}
+article{
+	margin-top: 30px;	
+}
+#main-header img{
+	width: 150px;
+	height: 100px;
+}
+img{
+	width: 200px;
+	height: 150px;
+}
+p{
+	margin: 0;
+  text-align: justify;
+}
+#main-header{
+	position: fixed;
+	z-index: 99;
+	left:  0px;
+	top: 0px;
+	background-color: #143153;
+	color: blue;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+#log{
+	position: static;
+	top: 10px;
+	left: 30px;
+}
+#logout{
+	position: absolute;
+	top: 10px;
+	left: 90%;
+}
+#main-nav{
+	position: fixed;
+	left: 50px;
+	width: 20%;
+	top: 120px;
+
+}
+.article_container{
+	display: flex;
+	background-color: #2B4A6F;
+}
+.article_header{
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.article_title{
+	position: relative;
+	padding: 15px;
+	bottom: 30px;
+	right: 10px;
+	background-color: #2B4A6F;
+	width: 150px;
+	height: 20px;
+  color: #C00000;
+  font: bold;
+}
+.article_description{
+	width: 100%;
+	margin: 20px 20px;
+}
+
+#main-sections{
+	position: absolute;
+	top: 140px;
+	left:30%;
+	right: 30px;
+}
+@media (max-width: 400px) {
+	#main-nav{
+		visibility: hidden;
+	}
+	#main-sections{
+		position: absolute;
+		top: 140px;
+		left: 20px;
+		right: 20px;
+	}
+	.article_container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.article_container img{
+		width: 335px;
+		height: 250px;
+	}
+}
+
+
+body #menu-toggle {
+  display: none;
+}
+body .wraper {
+	margin-top: 20px;
+  /* Slidebar menu */
+}
+body .wraper .hamburger {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+body .wraper .hamburger label {
+  position: relative;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+body .wraper .hamburger span,
+body .wraper .hamburger span:before,
+body .wraper .hamburger span:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition-property: margin, -webkit-transform, background-color;
+  -moz-transition-property: margin, -moz-transform, background-color;
+  transition-property: margin, transform, background-color;
+}
+body .wraper .hamburger span {
+  -webkit-transition-duration: 0, 0, 0.5s;
+  -moz-transition-duration: 0, 0, 0.5s;
+  transition-duration: 0, 0, 0.5s;
+  -webkit-transition-delay: 0.2s, 0, 0;
+  -moz-transition-delay: 0.2s, 0, 0;
+  transition-delay: 0.2s, 0, 0;
+  -webkit-transform: translate3d(0%, 50%, 0);
+  -moz-transform: translate3d(0%, 50%, 0);
+  -ms-transform: translate3d(0%, 50%, 0);
+  -o-transform: translate3d(0%, 50%, 0);
+  transform: translate3d(0%, 50%, 0);
+  top: 50%;
+}
+body .wraper .hamburger span:before,
+body .wraper .hamburger span:after {
+  -webkit-transition-duration: 0.2s, 0.2s, 0.5s;
+  -moz-transition-duration: 0.2s, 0.2s, 0.5s;
+  transition-duration: 0.2s, 0.2s, 0.5s;
+  -webkit-transition-delay: 0.2s, 0, 0;
+  -moz-transition-delay: 0.2s, 0, 0;
+  transition-delay: 0.2s, 0, 0;
+  left: 0;
+}
+body .wraper .hamburger span:before {
+  margin-top: -8px;
+}
+body .wraper .hamburger span:after {
+  margin-top: 8px;
+}
+body .wraper #sidebar {
+  padding: 20px;
+}
+body .wraper #sidebar:before {
+  content: "Menu is: ";
+}
+body .wraper #sidebar:after {
+  content: "Close";
+  font-weight: bold;
+}
+body #menu-toggle:checked + .wraper .hamburger span {
+  background-color: transparent !important;
+  -webkit-transition-delay: 0.2s, 0.2s, 0;
+  -moz-transition-delay: 0.2s, 0.2s, 0;
+  transition-delay: 0.2s, 0.2s, 0;
+}
+body #menu-toggle:checked + .wraper .hamburger span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-delay: 0, 0.2s;
+  -moz-transition-delay: 0, 0.2s;
+  transition-delay: 0, 0.2s;
+}
+body #menu-toggle:checked + .wraper .hamburger span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-delay: 0, 0.2s;
+  -moz-transition-delay: 0, 0.2s;
+  transition-delay: 0, 0.2s;
+}
+body #menu-toggle:checked + .wraper #sidebar:after {
+  content: "Open";
+}
