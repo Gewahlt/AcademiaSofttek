@@ -51,7 +51,10 @@
 .icon:hover{
 	-webkit-transform: scale(1.5,1.5);
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
 body{
 	background-color: #4B688B;
 	font-family: caviar;
