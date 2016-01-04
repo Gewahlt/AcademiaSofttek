@@ -114,9 +114,12 @@ p{
 #main-nav{
 	position: fixed;
 	left: 50px;
-	width: 20%;
+	width: 300px;
 	top: 120px;
 
+}
+#menu{
+  visibility: hidden;
 }
 .article_container{
 	display: flex;
@@ -167,6 +170,9 @@ p{
 		width: 335px;
 		height: 250px;
 	}
+  #menu{
+  visibility: visible;
+  }
 }
 
 

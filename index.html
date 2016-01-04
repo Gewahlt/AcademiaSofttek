@@ -24,19 +24,19 @@
     <header id="main-header">
         <img src="http://assets.cobaltnitra.com/teams/repository/export/v/1/b9d/e353068c610058cc900146efa6b30/b9de353068c610058cc900146efa6b30.png">
         <input type="checkbox" id="menu-toggle">
-        <div class="wraper icon">
+        <div id="menu" class="wraper icon">
             <div class="hamburger">
-                <label for="menu-toggle"><span></span></label>
+                <label for="menu-toggle" onclick="menu()"><span></span></label>
             </div>
     </header>
     <div id="main-container">
         <aside id="main-nav">
             <nav>
                 <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
-                    <li>Elemento 4</li>
+                    <li>Veyron 16.4</li>
+                    <li>Veyron 16.4 GTI</li>
+                    <li>Veyron 16.4 Coupé</li>
+                    <li>Elemento Sport</li>
                     <li>Elemento 5</li>
                 </ul>
             </nav>
@@ -91,6 +91,26 @@
         </div>
     </div>
     <script src="app/app.js"></script>
+    <script type="text/javascript">
+    var i = 0;
+    function menu(){
+        if(screen.width < 500){
+            if(i == 0){
+                document.getElementById('main-sections').style.visibility = "hidden";
+                document.getElementById('main-nav').style.visibility = "visible"; 
+                i=1;
+            } else{
+                document.getElementById('main-sections').style.visibility = "visible";
+                document.getElementById('main-nav').style.visibility = "hidden";
+                i=0;
+            }
+        } else {
+
+        }
+        
+        
+    } 
+    </script>
 </body>
 
 </html>

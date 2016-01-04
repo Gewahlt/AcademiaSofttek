@@ -68,4 +68,10 @@ function domApiFunc(){
   return publicAPI;
 };
 
+function menu(){
+  document.getElementById('main-sections').style.visibility = "hidden";
+  document.getElementById('main-nav').style.visibility = "initial"; 
+}
+
 })();
+
